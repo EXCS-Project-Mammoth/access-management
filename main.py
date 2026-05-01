@@ -43,7 +43,7 @@ def list_mammoth_unix_users() -> list[str]:
         command, check=True, shell=True, capture_output=True, text=True
     )
     user_lines = result.stdout.splitlines()
-    print("List of users:")
+
     for user_line in user_lines:
         # This user is part of the mammoth group
         if MAMMOTH_USERS_GROUP in user_line:
@@ -87,7 +87,7 @@ def main():
     create_unix_mammoth_group_if_not_exists()
 
     # Todo: Get list of users from somewhere
-    new_users = ["sr996", "ww414"]
+    new_users = ["sr996", "ww414", "src238"]
 
     # Get existing users
     existing_users = list_mammoth_unix_users()
