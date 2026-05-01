@@ -84,7 +84,7 @@ def main():
     create_unix_mammoth_group_if_not_exists()
 
     # Todo: Get list of users from somewhere
-    new_users = ["sr996"]
+    new_users = ["sr996", "ww414"]
 
     # Get existing users
     existing_users = list_mammoth_unix_users()
