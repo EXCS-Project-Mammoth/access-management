@@ -3,6 +3,9 @@ import secrets
 
 import os
 from cloudflare import Cloudflare
+from dotenv import load_dotenv
+
+load_dotenv()
 
 MAMMOTH_USERS_GROUP = "mammoth_cluster_users"
 CLOUDFLARE_ACCOUNT_ID = "5d55ab66bfc36f5ae67587f2fef416bb"
